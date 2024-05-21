@@ -1,0 +1,47 @@
+@media screen and (max-width: 760px){
+    body {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 36px;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    p {
+        max-width: 100%;
+        text-indent: 20px;
+        margin-top: 10px;
+        padding: 0 1rem;
+    }
+
+    img {
+        width: 100%;
+        margin-left: 0;
+        display: none;
+    }
+} 

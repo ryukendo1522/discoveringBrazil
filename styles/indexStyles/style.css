@@ -41,7 +41,6 @@ main{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-
 }
 
 h2{
@@ -54,6 +53,9 @@ p{
     line-height: 20px;
     max-width: 500px;
     font-family: poppinslight;
+    text-indent: 30px;
+    margin-top: -15px;
+    text-align: justify;
 }
 
 img{

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styless.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+
+
+  <title>DB - Contato</title>
+</head>
+<body class="contact">
+  <div id="header-container"></div>
+  <main class="contact">
+    <aside>
+      
+  </aside>
+    
+  </main>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar o header:', error));
+  </script>
+</body>
+</html>

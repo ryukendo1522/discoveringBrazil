@@ -25,3 +25,10 @@ document.onmousemove = function (e) {
     description.style.top = (e.pageY - 70) + "px";
 }
 
+fetch('header.html')
+.then(response => response.text())
+.then(data => {
+  document.getElementById('header-container').innerHTML = data;
+})
+.catch(error => console.error('Erro ao carregar o header:', error));
+

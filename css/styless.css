@@ -66,6 +66,15 @@ img{
     
 }
 
+/* Estilos Específicos para a Página Bandeiras */
+main.flags{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+
 /* Estilos Responsivos */
 @media screen and (max-width: 760px){
     body {

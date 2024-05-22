@@ -26,12 +26,20 @@
     </article>
   </main>
   <script>
-      fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o header:', error));
+          fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+
+        // Esconde o link para a página inicial quando a página inicial for carregada
+        if (document.body.classList.contains('home')) {
+          const homeLink = document.getElementById('home-link');
+          if (homeLink) {
+            homeLink.style.display = 'none';
+          }
+        }
+      })
+      .catch(error => console.error('Erro ao carregar o header:', error));
   </script>
 </body>
 </html>

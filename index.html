@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./styles/indexStyles/style.css" rel="stylesheet">
-  <link href="./styles/indexStyles/media.css" rel="stylesheet">
-  <link href="./styles/fonts.css" rel="stylesheet">
+  <link href="./css/styless.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
 
 
   <title>Home</title>
 </head>
-<header class="header">
- <div id="title">
-<h1>Discovering</h1>
-<h1>Brazil</h1>
- </div>
- <ul>
-  <a href="#"><li>Início</li></a>
-  <a href="/map.html"><li>Mapa</li></a>
-  <a href="#"><li>Bandeiras</li></a>
-  <a href="#"><li>Curiosidades</li></a>
-  <a href="#"><li>Contato</li></a>
- </ul>
-</header>
-<main>
-  <aside>
-    <h2>Amplie seu</h2>
-    <h2>conhecimento</h2>
-    
-      <p>Explore a diversidade dos estados brasileiros em nossa plataforma educativa, dedicada a revelar as características únicas de cada região do Brasil. </p>
-      <p>Com informações detalhadas de cada estado, nossa plataforma proporciona uma jornada de aprendizado enriquecedora. </p>
-      <p>Seja você um estudante curioso, um viajante ávido ou um entusiasta da cultura, nossa plataforma é o seu guia definitivo para explorar e entender os estados brasileiros.</p>
-    
-</aside>
-  <article>
-    <img src="./assets/images/explore.png" alt="brazil-map">
-  </article>
-</main>
+<body class="home">
+  <div id="header-container"></div>
+  <main class="home">
+    <aside>
+      <h2>Amplie seu</h2>
+      <h2>conhecimento</h2>
+      
+        <p>Explore a diversidade dos estados brasileiros em nossa plataforma educativa, dedicada a revelar as características únicas de cada região do Brasil. </p>
+        <p>Com informações detalhadas de cada estado, nossa plataforma proporciona uma jornada de aprendizado enriquecedora. </p>
+        <p>Seja você um estudante curioso, um viajante ávido ou um entusiasta da cultura, nossa plataforma é o seu guia definitivo para explorar e entender os estados brasileiros.</p>
+      
+  </aside>
+    <article>
+      <img src="./assets/images/explore.png" alt="brazil-map">
+    </article>
+  </main>
+  <script>
+      fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+            })
+            .catch(error => console.error('Erro ao carregar o header:', error));
+  </script>
+</body>
 </html>

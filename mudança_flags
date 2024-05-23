@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/styless.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    /* Estilos para a barra de navegação */
+    .navbar {
+      overflow: hidden;
+
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    /* Estilos para a imagem e o texto */
+    .navbar a:hover img {
+      opacity: 0.7;
+    }
+
+    .navbar a:hover .text {
+      display: block;
+    }
+
+    .text {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #f2f2f2;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .bandeira {
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+    }
+
+    .flag-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .flag-text {
+      visibility: hidden;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+
+      padding: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 65%;
+      left: 50%;
+      transform: translateX(-60%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .flag-container:hover .flag-text {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+
+  <title>DB - Bandeiras</title>
+</head>
+
+<body class="flag">
+  <div id="header-container"></div>
+  <main class="flag">
+    <aside>
+
+    </aside>
+
+  </main>
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar o header:', error));
+  </script>
+  <div class="column">
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Acre.jpg" alt="Bandeira do Acre">
+      <p class="flag-text">Bandeira do Acre</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Alagoas.jpg" alt="Bandeira de Alagoas">
+      <p class="flag-text">Bandeira de Alagoas</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Amapa.jpg" alt="Bandeira do Amapa">
+      <p class="flag-text">Bandeira do Amapa</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Amazonas.jpg" alt="Bandeira do Amazonas">
+      <p class="flag-text">Bandeira do Amazonas</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Bahia.jpg" alt="Bandeira da Bahia">
+      <p class="flag-text">Bandeira da Bahia</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Ceara.jpg" alt="Bandeira do Ceara">
+      <p class="flag-text">Bandeira do Ceara</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/DistritoFederal.jpg" alt="Bandeira do Distrito Federal">
+      <p class="flag-text">Bandeira do Distrito Federal</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/EspiritoSanto.jpg" alt="Bandeira do Espírito Santo">
+      <p class="flag-text">Bandeira do Espírito Santo</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Goias.jpg" alt="Bandeira de Goias">
+      <p class="flag-text">Bandeira de Goias</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Maranhao.jpg" alt="Bandeira do Maranhão">
+      <p class="flag-text">Bandeira do Maranhão</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/MatoGrosso.jpg" alt="Bandeira do Mato Grosso">
+      <p class="flag-text">Bandeira do Mato Grosso</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/MatoGrossoDoSul.jpg" alt="Bandeira do Mato Grosso do Sul">
+      <p class="flag-text">Bandeira do Mato Grosso do Sul</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/MinasGerais.jpg" alt="Bandeira de Minas Gerais">
+      <p class="flag-text">Bandeira de Minas Gerais</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Para.jpg" alt="Bandeira do Para">
+      <p class="flag-text">Bandeira do Para</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Paraiba.jpeg" alt="Bandeira da Paraiba">
+      <p class="flag-text">Bandeira da Paraiba</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Parana.jpg" alt="Bandeira do Parana">
+      <p class="flag-text">Bandeira do Parana</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Pernambuco.jpg" alt="Bandeira de Pernambuco">
+      <p class="flag-text">Bandeira de Pernambuco</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Piaui.jpg" alt="Bandeira do Piaui">
+      <p class="flag-text">Bandeira do Piaui</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Rondonia.jpg" alt="Bandeira de Rondonia">
+      <p class="flag-text">Bandeira de Rondonia</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Roraima.jpg" alt="Bandeira de Roraima">
+      <p class="flag-text">Bandeira de Roraima</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/SantaCatarina.jpg" alt="Bandeira de Santa Catarina">
+      <p class="flag-text">Bandeira de Santa Catarina</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Sergipe.jpg" alt="Bandeira de Sergipe">
+      <p class="flag-text">Bandeira de Sergipe</p>
+    </div>
+
+    <div class="flag-container">
+      <img class="bandeira" src="assets/flags/Tocantins.jpg" alt="Bandeira de Tocantins">
+      <p class="flag-text">Bandeira de Tocantins</p>
+    </div>
+  </div>
+</body>
+
+</html>
